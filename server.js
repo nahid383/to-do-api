@@ -1,5 +1,6 @@
 import express from 'express';
 import cors from 'cors';
+import todoRoutes from './routes/todo.routes.js';
 
 const app = express();
 const PORT = 3001
@@ -8,10 +9,10 @@ const PORT = 3001
 app.use(cors());
 app.use(express.json());
 
-//Test Route
-app.get("/", (req, res) => {
-    res.send("To-do Nahid API is running");
-});
+// //Test Route
+// app.get("/", (req, res) => {
+//     res.send("To-do Nahid API is running");
+// });
 
 //Start Server
 app.listen(PORT, () => {
