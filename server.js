@@ -9,10 +9,8 @@ const PORT = 3001
 app.use(cors());
 app.use(express.json());
 
-// //Test Route
-// app.get("/", (req, res) => {
-//     res.send("To-do Nahid API is running");
-// });
+//Test Route
+app.use('/', todoRoutes);
 
 //Start Server
 app.listen(PORT, () => {
